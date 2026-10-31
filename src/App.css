@@ -1,0 +1,170 @@
+
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f2;
+  color: #26352c;
+}
+
+/* ENCABEZADO */
+header {
+  background-color: #173f32;
+  color: white;
+  padding: 25px 8%;
+}
+
+header h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #dce9df;
+}
+
+/* MENU DE NAVEGACION */
+nav {
+  background-color: #245943;
+  padding: 18px 8%;
+  display: flex;
+  gap: 35px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e7c98b;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+  padding: 70px 8%;
+  min-height: 400px;
+}
+
+main h2 {
+  color: #245943;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 650px;
+}
+/* PRESENTACION PRINCIPAL */
+.bienvenida {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.texto-bienvenida {
+  flex: 1;
+}
+
+.bienvenida img {
+  width: 50%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 25px;
+  background-color: #245943;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background-color: #173f32;
+}
+
+/* DESTINOS DESTACADOS */
+.destacados {
+  margin-top: 80px;
+}
+
+.destacados h2 {
+  color: #245943;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.subtitulo {
+  margin-bottom: 30px;
+  color: #647268;
+}
+
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.contenido-tarjeta {
+  padding: 20px;
+}
+
+.contenido-tarjeta h3 {
+  color: #245943;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.contenido-tarjeta p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ADAPTACION PARA CELULARES */
+@media (max-width: 768px) {
+  .bienvenida {
+    flex-direction: column;
+  }
+
+  .bienvenida img {
+    width: 100%;
+  }
+
+  .contenedor-tarjetas {
+    grid-template-columns: 1fr;
+  }
+}
