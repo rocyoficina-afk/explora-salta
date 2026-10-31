@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Inicio() {
 
@@ -68,9 +69,9 @@ function Inicio() {
             cultura, gastronomía y experiencias inolvidables.
           </p>
 
-          <a href="/destinos" className="boton">
-            Conocer destinos
-          </a>
+          <Link to="/destinos" className="boton">
+  Conocer destinos
+</Link>
 
         </div>
 
