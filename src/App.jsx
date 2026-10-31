@@ -1,28 +1,25 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Menu from "./componentes/menu.jsx";
-import Inicio from "./Paginas/Inicio.jsx";
-import Destinos from "./Paginas/Destinos.jsx";
-import Contacto from "./Paginas/Contacto.jsx";
+import Inicio from "./Paginas/Inicio";
+import Destinos from "./Paginas/Destinos";
+import Contacto from "./Paginas/Contacto";
+import Menu from "./componentes/menu";
 
 import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
-      <header>
-        <h1>EXPLORÁ SALTA</h1>
-        <p>Descubrí los paisajes de nuestra provincia</p>
-      </header>
+    <HashRouter>
+      <div className="App">
+        <Menu />
 
-      <Menu />
-
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/Destinos" element={<Destinos />} />
-        <Route path="/Contacto" element={<Contacto />} />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/destinos" element={<Destinos />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
+      </div>
+    </HashRouter>
   );
 }
 
