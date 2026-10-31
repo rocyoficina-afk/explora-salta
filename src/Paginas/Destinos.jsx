@@ -1,5 +1,5 @@
 
-import destinos from "../data/destinos";
+import destinos from "../data/Destinos.js";
 
 function Destinos() {
   return (
