@@ -5,7 +5,8 @@ import Inicio from "./Paginas/Inicio";
 import Destinos from "./Paginas/Destinos";
 import Contacto from "./Paginas/Contacto";
 import Menu from "./componentes/menu";
-import Footer from "./componentes/Footer";
+import Footer from "./componentes/footer";
+
 
 import "./App.css";
 
